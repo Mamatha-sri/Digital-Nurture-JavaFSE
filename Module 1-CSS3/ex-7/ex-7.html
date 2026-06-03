@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Styling - Local Community Event Portal</title>
+
+    <style>
+
+        /* =====================================
+           Body Styling
+        ===================================== */
+        body {
+            background-image: url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* =====================================
+           Main Container
+        ===================================== */
+        .container {
+            width: 85%;
+            margin: auto;
+            background-color: rgba(255,255,255,0.9);
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        /* =====================================
+           Page Heading
+        ===================================== */
+        h1 {
+            text-align: center;
+            color: navy;
+            margin-bottom: 20px;
+        }
+
+        /* =====================================
+           Table Styling
+        ===================================== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* =====================================
+           Table Header Styling
+        ===================================== */
+        th {
+            border: 1px solid #333;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* =====================================
+           Table Data Styling
+        ===================================== */
+        td {
+            border: 1px solid #333;
+            padding: 12px;
+            background-color: #f9f9f9;
+        }
+
+        /* =====================================
+           Zebra Striping
+        ===================================== */
+        tr:nth-child(even) {
+            background-color: #dbeafe;
+        }
+
+        /* =====================================
+           Hover Effect
+        ===================================== */
+        tr:hover {
+            background-color: #c7e0ff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Events Administration Table</h1>
+
+        <table>
+
+            <tr>
+                <th>Event ID</th>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>E101</td>
+                <td>Music Festival</td>
+                <td>10-Aug-2026</td>
+                <td>City Park</td>
+            </tr>
+
+            <tr>
+                <td>E102</td>
+                <td>Food Carnival</td>
+                <td>15-Aug-2026</td>
+                <td>Community Hall</td>
+            </tr>
+
+            <tr>
+                <td>E103</td>
+                <td>Art Exhibition</td>
+                <td>20-Aug-2026</td>
+                <td>Town Gallery</td>
+            </tr>
+
+            <tr>
+                <td>E104</td>
+                <td>Sports Meet</td>
+                <td>25-Aug-2026</td>
+                <td>Sports Complex</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
+
+
