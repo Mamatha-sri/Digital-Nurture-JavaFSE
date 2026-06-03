@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors Playground</title>
+
+    <style>
+
+        /* =====================================
+           Universal Selector
+           Resets margin and padding
+        ===================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =====================================
+           Body Styling
+        ===================================== */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+
+        /* =====================================
+           Element Selector
+           Styles all h2 elements
+        ===================================== */
+        h2 {
+            color: darkblue;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* =====================================
+           ID Selector
+           Styles the banner
+        ===================================== */
+        #mainHeader {
+            background-color: navy;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* =====================================
+           Class Selector
+           Styles event containers
+        ===================================== */
+        .eventCard {
+            background-color: rgba(255,255,255,0.9);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* =====================================
+           Grouping Selector
+           Styles h3 and p together
+        ===================================== */
+        h3, p {
+            color: #333;
+            font-family: Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ID Selector Example -->
+    <h2 id="mainHeader">
+        Local Community Event Portal
+    </h2>
+
+    <!-- Class Selector Example -->
+    <div class="eventCard">
+
+        <h3>Music Festival</h3>
+
+        <p>
+            Enjoy live music performances, food stalls,
+            dance shows, and cultural activities.
+        </p>
+
+    </div>
+
+    <div class="eventCard">
+
+        <h3>Food Carnival</h3>
+
+        <p>
+            Experience delicious local cuisine and
+            community celebrations with family.
+        </p>
+
+    </div>
+
+</body>
+</html>
+```

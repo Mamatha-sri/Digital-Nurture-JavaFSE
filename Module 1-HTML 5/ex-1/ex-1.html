@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        /* Dark overlay */
+        .overlay{
+            background-color: rgba(0,0,0,0.6);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: #00bfff;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li{
+            margin-left: 30px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #00bfff;
+        }
+
+        /* Main Content */
+        main{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content{
+            max-width: 700px;
+        }
+
+        .content h1{
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .content p{
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: #00bfff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #009acd;
+        }
+
+        /* Footer */
+        footer{
+            background-color: rgba(0,0,0,0.7);
+            text-align: center;
+            padding: 15px;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <!-- Navbar -->
+        <nav>
+
+            <div class="logo">
+                EventPortal
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+
+            <div class="content">
+
+                <h1>Welcome to Community Event Portal</h1>
+
+                <p>
+                    Discover exciting local events, workshops,
+                    community meetups, and cultural programs
+                    happening around your city.
+                </p>
+
+                <a href="#" class="btn">Explore Events</a>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            © 2026 Community Event Portal | Designed for HTML5 Exercise
+        </footer>
+
+    </div>
+
+</body>
+</html>
