@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model & Layout Control</title>
+
+    <style>
+
+        /* =====================================
+           Body Styling
+        ===================================== */
+        body {
+            background-image: url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* =====================================
+           Main Container
+        ===================================== */
+        .container {
+            background-color: rgba(255,255,255,0.9);
+            width: 85%;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* =====================================
+           Event Card
+           Border + Padding + Margin
+        ===================================== */
+        .eventCard {
+            border: 2px solid #007BFF;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* =====================================
+           Form Input Outline
+        ===================================== */
+        input:focus {
+            outline: 3px solid orange;
+        }
+
+        /* =====================================
+           Visibility Hidden Example
+        ===================================== */
+        .hiddenBox {
+            visibility: hidden;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* =====================================
+           Display None Example
+        ===================================== */
+        .noneBox {
+            display: none;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Local Community Event Portal</h1>
+
+        <!-- Event Card -->
+        <div class="eventCard">
+            <h3>Music Festival</h3>
+            <p>
+                This card demonstrates the CSS Box Model
+                using border, padding, and margin.
+            </p>
+        </div>
+
+        <!-- Form Example -->
+        <h3>Event Registration</h3>
+
+        <input type="text" placeholder="Enter your name">
+
+        <!-- visibility: hidden -->
+        <div class="hiddenBox">
+            This box is hidden but its space remains.
+        </div>
+
+        <!-- display: none -->
+        <div class="noneBox">
+            This box is removed completely.
+        </div>
+
+    </div>
+
+</body>
+</html>
+

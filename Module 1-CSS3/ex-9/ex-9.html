@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Columns in Text</title>
+
+    <style>
+
+        /* =====================================
+           Body Styling
+        ===================================== */
+        body {
+            background-image: url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* =====================================
+           Main Container
+        ===================================== */
+        .container {
+            width: 85%;
+            margin: auto;
+            background-color: rgba(255,255,255,0.9);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* =====================================
+           Heading Styling
+        ===================================== */
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        /* =====================================
+           News Article Section
+           CSS3 Multi-Column Layout
+        ===================================== */
+        .newsArticle {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid gray;
+
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Community Bulletin</h1>
+
+        <div class="newsArticle">
+
+            <p>
+                The Local Community Event Portal continues to bring residents
+                together through cultural programs, educational workshops,
+                sports activities, and public awareness campaigns. These events
+                provide opportunities for citizens to connect, learn new skills,
+                and participate in community development initiatives.
+            </p>
+
+            <p>
+                This month, the city council is organizing a Music Festival,
+                Food Carnival, Art Exhibition, and Sports Meet. Residents are
+                encouraged to participate and contribute to making these events
+                successful. Community volunteers will also help coordinate
+                activities and guide visitors throughout the programs.
+            </p>
+
+            <p>
+                The portal serves as a central platform for event registration,
+                announcements, schedules, and updates. By using this portal,
+                citizens can stay informed about upcoming activities and engage
+                actively in local community events.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
