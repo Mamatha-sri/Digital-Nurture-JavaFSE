@@ -1,5 +1,12 @@
 # Cognizant Digital Nurture – Java Full Stack Engineering
 
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![React](https://img.shields.io/badge/React-19-blue)
+![Git](https://img.shields.io/badge/Git-Version_Control-red)
+![Learning](https://img.shields.io/badge/Status-Learning-success)
+
+---
 ## Overview
 
 This repository contains my solutions, hands-on exercises, projects, and practice programs completed as part of the **Cognizant Digital Nurture – Java Full Stack Engineering (DeepSkilling)** program.
