@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback Form</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .overlay{
+            background-color: rgba(0,0,0,0.7);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container{
+            background-color: white;
+            color: black;
+            width: 450px;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0077cc;
+        }
+
+        label{
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        button{
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            border: none;
+            background-color: #0077cc;
+            color: white;
+            font-size: 17px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #005fa3;
+        }
+
+        #fee{
+            color: green;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #phoneError{
+            color: red;
+            font-size: 14px;
+        }
+
+        #charCount{
+            font-size: 14px;
+            margin-top: 5px;
+            color: #555;
+        }
+
+        img{
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .large{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Event Feedback</h1>
+
+        <!-- Phone Number -->
+        <label>Phone Number</label>
+
+        <input 
+            type="text"
+            id="phone"
+            placeholder="Enter 10-digit phone number"
+            onblur="validatePhone()"
+        >
+
+        <div id="phoneError"></div>
+
+        <!-- Event Selection -->
+        <label>Select Event</label>
+
+        <select onchange="showFee(this.value)">
+
+            <option value="">Choose Event</option>
+            <option value="500">Music Festival</option>
+            <option value="1000">Coding Workshop</option>
+            <option value="700">Food Carnival</option>
+
+        </select>
+
+        <div id="fee"></div>
+
+        <!-- Feedback -->
+        <label>Feedback</label>
+
+        <textarea 
+            rows="5"
+            id="feedback"
+            placeholder="Write your feedback..."
+            onkeyup="countCharacters()"
+        ></textarea>
+
+        <div id="charCount">
+            Characters: 0
+        </div>
+
+        <!-- Submit Button -->
+        <button onclick="submitForm()">
+            Submit Feedback
+        </button>
+
+        <!-- Image -->
+        <img 
+            src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+            ondblclick="enlargeImage(this)"
+            alt="Event Image"
+            title="Double Click to Enlarge"
+        >
+
+    </div>
+
+</div>
+
+<script>
+
+    /* onblur */
+    function validatePhone(){
+
+        let phone = document.getElementById("phone").value;
+
+        if(phone.length != 10 || isNaN(phone)){
+
+            document.getElementById("phoneError").innerHTML =
+            "Invalid Phone Number";
+
+        }else{
+
+            document.getElementById("phoneError").innerHTML =
+            "";
+        }
+    }
+
+    /* onchange */
+    function showFee(value){
+
+        if(value != ""){
+
+            document.getElementById("fee").innerHTML =
+            "Event Fee: ₹" + value;
+
+        }else{
+
+            document.getElementById("fee").innerHTML = "";
+        }
+    }
+
+    /* onclick */
+    function submitForm(){
+
+        alert("Feedback Submitted Successfully!");
+    }
+
+    /* ondblclick */
+    function enlargeImage(img){
+
+        img.classList.toggle("large");
+    }
+
+    /* keyboard event */
+    function countCharacters(){
+
+        let text =
+        document.getElementById("feedback").value;
+
+        document.getElementById("charCount").innerHTML =
+        "Characters: " + text.length;
+    }
+
+</script>
+
+</body>
+
+</html>

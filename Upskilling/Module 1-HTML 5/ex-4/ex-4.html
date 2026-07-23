@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Gallery</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .overlay{
+            background-color: rgba(0,0,0,0.7);
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 45px;
+        }
+
+        table{
+            margin: auto;
+            border-spacing: 25px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        /* Image Styling Class */
+        .event-img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .event-img:hover{
+            transform: scale(1.05);
+            border-color: #00bfff;
+        }
+
+        caption{
+            caption-side: bottom;
+            color: white;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .event-name{
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>Past Community Events Gallery</h1>
+
+    <!-- Table with 2 Rows and 3 Columns -->
+    <table>
+
+        <!-- Row 1 -->
+        <tr>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678"
+                    alt="Music Festival"
+                    title="Music Festival Event"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Music Festival 2026
+                </div>
+            </td>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+                    alt="Coding Workshop"
+                    title="Coding Workshop"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Coding Bootcamp
+                </div>
+            </td>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+                    alt="Food Carnival"
+                    title="Food Carnival"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Food Carnival
+                </div>
+            </td>
+
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a"
+                    alt="Art Exhibition"
+                    title="Art Exhibition"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Art Exhibition
+                </div>
+            </td>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1515169067868-5387ec356754"
+                    alt="Dance Event"
+                    title="Dance Event"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Dance Competition
+                </div>
+            </td>
+
+            <td>
+                <img 
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                    alt="Tech Seminar"
+                    title="Tech Seminar"
+                    class="event-img"
+                >
+
+                <div class="event-name">
+                    Tech Seminar
+                </div>
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+
+</html>

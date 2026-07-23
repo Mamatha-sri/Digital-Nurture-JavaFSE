@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color & Background Styling</title>
+
+    <style>
+
+        /* =====================================
+           Body Styling
+           Background Image with Fallback Color
+        ===================================== */
+        body {
+            background-color: #e6f2ff; /* Fallback HEX Color */
+
+            background-image: url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* =====================================
+           Main Header with Gradient
+        ===================================== */
+        .header {
+            background: linear-gradient(to right, #003366, #3399ff);
+
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* =====================================
+           Section Header with Gradient
+        ===================================== */
+        .sectionHeader {
+            background: linear-gradient(to right, #0066cc, #66ccff);
+
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* =====================================
+           Event Card Styling
+           Using RGBA Background
+        ===================================== */
+        .eventCard {
+            background-color: rgba(255, 255, 255, 0.85);
+
+            color: #333333; /* HEX Text Color */
+
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* =====================================
+           Paragraph Styling
+        ===================================== */
+        p {
+            color: #444444;
+            line-height: 1.6;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <div class="header">
+        <h1>Local Community Event Portal</h1>
+    </div>
+
+    <!-- Section Header -->
+    <h2 class="sectionHeader">
+        Upcoming Events
+    </h2>
+
+    <!-- Event Card -->
+    <div class="eventCard">
+
+        <h3>City Music Festival</h3>
+
+        <p>
+            Enjoy live music performances, cultural shows,
+            food stalls, and entertainment activities for all ages.
+        </p>
+
+    </div>
+
+    <!-- Event Card -->
+    <div class="eventCard">
+
+        <h3>Community Food Carnival</h3>
+
+        <p>
+            Experience local cuisines, traditional dishes,
+            and exciting family-friendly activities.
+        </p>
+
+    </div>
+
+</body>
+</html>
+```

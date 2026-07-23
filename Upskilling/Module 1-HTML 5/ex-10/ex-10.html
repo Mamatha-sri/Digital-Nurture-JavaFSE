@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Practice</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1{
+            color: #0077cc;
+        }
+
+        button{
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #005fa3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Chrome DevTools Debugging</h1>
+
+    <p id="message">
+        Click the button to test JavaScript debugging.
+    </p>
+
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+
+<script>
+
+    let username = "Community User";
+
+    console.log("Page Loaded Successfully");
+
+    function showMessage(){
+
+        console.log("Button Clicked");
+
+        let count = 5;
+
+        debugger;
+
+        document.getElementById("message").innerHTML =
+        "Welcome " + username;
+    }
+
+</script>
+
+</body>
+
+</html>
