@@ -1,4 +1,4 @@
-# Cognizant Digital Nurture – Java Full Stack Engineering (DeepSkilling)
+# Cognizant Digital Nurture – Java Full Stack Engineering
 
 ## Overview
 
