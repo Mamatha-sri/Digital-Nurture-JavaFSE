@@ -9,7 +9,7 @@
 ---
 ## Overview
 
-This repository contains my solutions, hands-on exercises, projects, and practice programs completed as part of the **Cognizant Digital Nurture – Java Full Stack Engineering (DeepSkilling)** program.
+This repository contains my solutions, hands-on exercises, projects, and practice programs completed as part of the **Cognizant Digital Nurture – Java Full Stack Engineering (DeepSkilling,upskilling)** program.
 
 The repository demonstrates my learning journey through various technologies required for building modern Java Full Stack applications.
 
